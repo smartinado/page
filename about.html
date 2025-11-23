@@ -1,42 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - About</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Tasmagic</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a class="logo" href="index.html">tasmagic</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Features</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <!-- Navigation bar -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="portfolio.html">Project</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <main>
+      <section class="section">
+        <h2>Built by Tasmota power users for the community</h2>
+        <p class="section-lead">
+          Tasmagic started as an internal toolkit for Smartinado engineers who needed faster provisioning flows,
+          safer Berry automation reviews, and modern dashboards for large Tasmota fleets. We turned it into an
+          open-source Flutter app so everyone can manage their devices with confidence.
+        </p>
+      </section>
 
-  <!-- About section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write a detailed description about yourself, your skills, experience, and interests.</p>
-    <p>Include information about your education, career, hobbies, and any other relevant details.</p>
-  </section>
+      <section class="section">
+        <div class="grid">
+          <article class="card">
+            <span class="pill">Mission</span>
+            <h3>A single control room</h3>
+            <p>
+              Replace scattered tools with one delightful interface that covers discovery, provisioning,
+              automation, analytics, and maintenance.
+            </p>
+          </article>
+          <article class="card">
+            <span class="pill">Principles</span>
+            <h3>Offline-first & transparent</h3>
+            <p>
+              Everything runs locally, automation code is always reviewable, and the entire stack is open-source.
+            </p>
+          </article>
+          <article class="card">
+            <span class="pill">Technology</span>
+            <h3>Flutter + pure Dart</h3>
+            <p>
+              A single codebase powers Android, iOS, desktop experiments, and the documentation website you are reading now.
+            </p>
+          </article>
+        </div>
+      </section>
 
-  <!-- Skills section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>Responsive Web Design</li>
-      <li>UI/UX Design</li>
-      <!-- Add more skills as needed -->
-    </ul>
-  </section>
+      <section class="section">
+        <h2>Product milestones</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Discovery 2.0</h3>
+            <p>Multi-network scans, MQTT health probes, and one-tap dashboard generation.</p>
+          </article>
+          <article class="card">
+            <h3>Automation Studio</h3>
+            <p>Round-trip Berry parsing, trigger/condition diffing, and visual preview for complex flows.</p>
+          </article>
+          <article class="card">
+            <h3>Provisioning Suite</h3>
+            <p>Captive portal assistant, Wi-Fi templates, and credential vault with secure sharing.</p>
+          </article>
+          <article class="card">
+            <h3>Insights & Backups</h3>
+            <p>Historical sensor charts, log streaming, and encrypted device/automation backups.</p>
+          </article>
+        </div>
+      </section>
+    </main>
 
-</body>
+    <footer>
+      <p>© <span id="year"></span> Tasmagic by Smartinado.</p>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+          <article class="card">
+            <span class="pill">Technology</span>
+            <h3>Flutter + pure Dart</h3>
+            <p>
+              A single codebase powers Android, iOS, desktop experiments, and the documentation website you are reading now.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Product milestones</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Discovery 2.0</h3>
+            <p>Multi-network scans, MQTT health probes, and one-tap dashboard generation.</p>
+          </article>
+          <article class="card">
+            <h3>Automation Studio</h3>
+            <p>Round-trip Berry parsing, trigger/condition diffing, and visual preview for complex flows.</p>
+          </article>
+          <article class="card">
+            <h3>Provisioning Suite</h3>
+            <p>Captive portal assistant, Wi-Fi templates, and credential vault with secure sharing.</p>
+          </article>
+          <article class="card">
+            <h3>Insights & Backups</h3>
+            <p>Historical sensor charts, log streaming, and encrypted device/automation backups.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Tasmagic by Smartinado.</p>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

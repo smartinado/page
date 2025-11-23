@@ -1,45 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Contact</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Contact the Tasmagic team</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <nav>
+        <div class="nav-inner">
+          <a class="logo" href="index.html">tasmagic</a>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Features</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
 
-  <!-- Navigation bar -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="portfolio.html">Project</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+      <main>
+        <section class="section">
+          <h2>Talk to the builders</h2>
+          <p class="section-lead">
+            Need an integration, a roadmap chat, or help deploying at scale? Drop us a line and we will respond within two business days.
+          </p>
+          <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Alex Installer" required />
 
-  <!-- Contact section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out to me using the form below or via email: your@email.com</p>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com" required />
 
-  <!-- Address section -->
-  <section id="address">
-    <h2>Address</h2>
-    <p>123 Main Street</p>
-    <p>City, State, Zip Code</p>
-    <p>Country</p>
-  </section>
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" required>
+              <option value="">Select a topic</option>
+              <option value="demo">Product demo</option>
+              <option value="partnership">Partnership</option>
+              <option value="support">Support</option>
+              <option value="press">Press / media</option>
+            </select>
 
-</body>
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+
+            <button class="btn btn--primary" type="submit">Send request</button>
+          </form>
+        </section>
+
+        <section class="section">
+          <div class="grid">
+            <article class="card">
+              <span class="pill">Email</span>
+              <h3>support@smartinado.dev</h3>
+              <p>
+                For feature requests, enterprise builds, or security inquiries. We route each message to the correct engineer.
+              </p>
+            </article>
+            <article class="card">
+              <span class="pill">GitHub</span>
+              <h3>Community & issues</h3>
+              <p>
+                Open a ticket on <a href="https://github.com/smartinado/tasmagic/issues" target="_blank" rel="noreferrer">GitHub Issues</a> to report bugs or follow the public roadmap.
+              </p>
+            </article>
+            <article class="card">
+              <span class="pill">Releases</span>
+              <h3>Alpha builds</h3>
+              <p>
+                Subscribe to <a href="https://github.com/smartinado/tasmagic/releases" target="_blank" rel="noreferrer">GitHub Releases</a> for APK drops, changelog highlights, and OTA notices.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>© <span id="year"></span> Tasmagic by Smartinado.</p>
+      </footer>
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+          event.preventDefault();
+          alert('Thanks! We will reply shortly.');
+          this.reset();
+        });
+      </script>
+    </body>
+  </html>
+            <option value="partnership">Partnership</option>
+            <option value="support">Support</option>
+            <option value="press">Press / media</option>
+          </select>
+
+          <label for="message">How can we help?</label>
+          <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+
+          <button class="btn btn--primary" type="submit">Send request</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <div class="grid">
+          <article class="card">
+            <span class="pill">Email</span>
+            <h3>support@smartinado.dev</h3>
+            <p>
+              For feature requests, enterprise builds, or security inquiries. We route each message to the correct engineer.
+            </p>
+          </article>
+          <article class="card">
+            <span class="pill">GitHub</span>
+            <h3>Community & issues</h3>
+            <p>
+              Open a ticket on <a href="https://github.com/smartinado/tasmagic/issues" target="_blank" rel="noreferrer">GitHub Issues</a> to report bugs or follow the public roadmap.
+            </p>
+          </article>
+          <article class="card">
+            <span class="pill">Releases</span>
+            <h3>Alpha builds</h3>
+            <p>
+              Subscribe to <a href="https://github.com/smartinado/tasmagic/releases" target="_blank" rel="noreferrer">GitHub Releases</a> for APK drops, changelog highlights, and OTA notices.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Tasmagic by Smartinado.</p>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Thanks! We will reply shortly.');
+        this.reset();
+      });
+    </script>
+  </body>
 </html>
