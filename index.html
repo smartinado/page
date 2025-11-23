@@ -3,171 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tasmagic | Smarter Tasmota Management</title>
+    <title>Tasmagic | Flutter control room for Tasmota</title>
     <meta
       name="description"
-      content="Tasmagic is the enterprise-ready companion for discovering, provisioning, automating, and monitoring every Tasmota device in the field."
+      content="Tasmagic is the user-friendly Flutter companion for Tasmota devices, built by Kamal Farai for installers, makers, and MSPs."
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-inner">
+    <header class="site-header">
+      <div class="wrap">
         <a class="logo" href="index.html">tasmagic</a>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Features</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <nav>
+          <a href="index.html" class="active">Overview</a>
+          <a href="experience.html">Experience</a>
+          <a href="variants.html">Variants</a>
+          <a href="insights.html">Insights</a>
+          <a href="contact.html">Contact</a>
+        </nav>
       </div>
-    </nav>
+    </header>
 
     <main>
-      <header class="hero">
-        <div class="hero-badge">Hand-built by Kamal Farai</div>
-        <h1>I built Tasmagic so the Tasmota community gets a user-friendly control room.</h1>
+      <section class="hero">
+        <p class="badge">Hand-built by Kamal Farai</p>
+        <h1>I built Tasmagic so the Tasmota community can onboard devices without friction.</h1>
         <p>
-          Tasmota is a legendary open-source firmware with a huge maker community, but day-to-day provisioning can still feel like a
-          pile of scripts. I'm Kamal Farai, and Tasmagic is my Flutter app that bundles discovery, Wi-Fi onboarding, Berry automation,
-          dashboards, and analytics into one private workflow—no external services, no hidden team, just me shipping the app I use.
+          Tasmota is a legendary open-source firmware with a huge community. Tasmagic is my take on a commercial-grade companion app: a fully
+          offline Flutter experience that unifies discovery, provisioning, dashboards, Berry automation, and analytics. The downloadable build on
+          this site is <strong>free forever</strong>—it is how I learn what the community needs while the Premium tier is polished for release soon.
         </p>
-        <div class="hero-cta">
-          <a class="btn btn--primary" href="downloads/tasmagic-free.apk" download>
-            Download Free Demo APK
+        <div class="cta-row">
+          <a class="btn primary" href="downloads/tasmagic-free.apk" download onclick="recordDownload(event)">
+            Download Free Community Build
           </a>
-          <a class="btn btn--ghost" href="contact.html">
-            Request deployment support
-          </a>
+          <a class="btn ghost" href="variants.html">See upcoming tiers</a>
         </div>
-      </header>
-
-      <section class="section">
-        <h2>Why I keep iterating on Tasmagic</h2>
-        <p class="section-lead">
-          I maintain Tasmagic for installers, MSPs, and hobbyists who depend on open-source Tasmota firmware every day but still want a
-          calm, user-friendly interface.
-        </p>
-        <div class="grid">
-          <article class="card">
-            <span class="pill">Device intelligence</span>
-            <h3>Instant discovery</h3>
-            <p>
-              Scan the network, fingerprint firmware, and auto-generate dashboards for every relay, light, or sensor in seconds.
-            </p>
-          </article>
-          <article class="card">
-            <span class="pill">Provisioning</span>
-            <h3>Guided Wi-Fi onboarding</h3>
-            <p>
-              Batch provision captive portals, push MQTT credentials, and validate relay states before leaving the site.
-            </p>
-          </article>
-          <article class="card">
-            <span class="pill">Automation</span>
-            <h3>Visual Berry builder</h3>
-            <p>
-              Translate Berry code back into editable triggers, conditions, and actions. Deploy automations without syntax anxiety.
-            </p>
-          </article>
-          <article class="card">
-            <span class="pill">Operations</span>
-            <h3>Live dashboards</h3>
-            <p>
-              Rich charts for sensors, relay overrides, RGB/CT lighting controls, template switching, and OTA firmware management.
-            </p>
-          </article>
-        </div>
+        <p class="trust-note">No telemetry, no account setup, and the APK is signed by me.</p>
       </section>
 
-      <section class="section">
-        <h2>Variants tuned for every deployment</h2>
-        <p class="section-lead">
-          Select the service tier that matches your operating model. Each edition is a simple feature unlock that I package and sign
-          myself.
-        </p>
-        <div class="card">
-          <table class="variants-table">
-            <thead>
-              <tr>
-                <th>Tier</th>
-                <th>Core inclusions</th>
-                <th>Ideal for</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Free (Demo)</td>
-                <td>Discovery, Wi-Fi provisioning, smart dashboard, full localization</td>
-                <td>Proof-of-concept rigs and internal evaluations</td>
-              </tr>
-              <tr>
-                <td>Premium</td>
-                <td>+ Appearance editor, custom sections, branded dashboards</td>
-                <td>Client-facing UI rollouts</td>
-              </tr>
-              <tr>
-                <td>Pro</td>
-                <td>+ GPIO designer, timers, Berry automations, template catalog</td>
-                <td>Installers &amp; field service teams</td>
-              </tr>
-              <tr>
-                <td>Pro Plus</td>
-                <td>+ Sensor analytics, backups, advanced lights, OTA workflows</td>
-                <td>Enterprise programs and MSP fleets</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Trusted across every phase of deployment</h2>
-        <div class="grid">
-          <article class="testimonial">
-            <p>
-              “We replaced spreadsheets and CLI scripts with Tasmagic dashboards.
-              Commissioning 40-node lighting installs now takes one afternoon.”
-            </p>
-            <p><strong>— Systems Integrator, Berlin</strong></p>
-          </article>
-          <article class="testimonial">
-            <p>
-              “Berry automation diffing is a lifesaver. We can audit customer rules,
-              tweak logic visually, and push trusted code back to the device.”
-            </p>
-            <p><strong>— Smart Home Consultant, São Paulo</strong></p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="cta-panel">
-          <h2>Ready for pilot, rollout, or fleet migration?</h2>
+      <section class="grid two-column">
+        <article>
+          <h2>What the free build includes</h2>
+          <ul class="feature-list">
+            <li>Dual-mode device discovery (quick scan + full subnet)</li>
+            <li>Guided Wi-Fi onboarding with credential vault</li>
+            <li>Instant dashboards for relays, lights, sensors, and energy devices</li>
+            <li>Visual Berry automation editor with round-trip parsing</li>
+            <li>Sensor history charts with CSV export</li>
+            <li>Template catalog covering 60+ popular devices</li>
+          </ul>
+        </article>
+        <article>
+          <h2>What is coming next</h2>
           <p>
-            I personally support pilots, knowledge transfers, and custom module work. Share your deployment goals and
-            you'll hear directly from the person who designs and ships Tasmagic.
+            Premium and Pro are in development and will unlock appearance editing, automation diffing, ops reports, and fleet-level backups.
+            These tiers are packaged by me and shipped the same way—signed APKs with zero extra build steps.
           </p>
-          <div class="hero-cta">
-            <a class="btn btn--primary" href="downloads/tasmagic-free.apk" download>
-              Download Free Demo APK
-            </a>
-            <a class="btn btn--ghost" href="contact.html">Book a consultation</a>
+          <div class="soon-card">
+            <p class="soon-label">Premium launch window</p>
+            <p class="soon-date">Q1 2026 · join the waitlist via the contact form</p>
           </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>See the app before you install</h2>
+        <p>Every screenshot below is taken from the exact APK hosted here.</p>
+        <div class="screenshot-grid">
+          <figure>
+            <img src="assets/images/discovery.png" alt="Device discovery screen" loading="lazy" />
+            <figcaption>Auto-discovery finds devices in seconds.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/dashboard.png" alt="Dashboard screen" loading="lazy" />
+            <figcaption>Dashboards adapt to every relay and sensor.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/lights.png" alt="Lights control screen" loading="lazy" />
+            <figcaption>Dedicated RGB/CT lighting experience.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/automation.png" alt="Automation builder screen" loading="lazy" />
+            <figcaption>Visual Berry studio with diff-friendly layout.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/sensors.png" alt="Sensor analytics screen" loading="lazy" />
+            <figcaption>Charts for temperature, humidity, power, and more.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/provisioning.png" alt="Provisioning assistant screen" loading="lazy" />
+            <figcaption>Step-by-step Wi-Fi provisioning with validation.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section highlight">
+        <div>
+          <h2>Core principles</h2>
+          <ul class="pill-list">
+            <li>Offline-first & privacy respectful</li>
+            <li>Readable automations</li>
+            <li>Signed builds, no cloud accounts</li>
+            <li>Transparent roadmap</li>
+          </ul>
+        </div>
+        <div>
+          <h2>For whom?</h2>
+          <p>
+            Installers, MSPs, and hobbyists running Tasmota across smart plugs, lighting, and sensors. If you ship devices with open firmware,
+            this is for you.
+          </p>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>© <span id="year"></span> Tasmagic. Built and maintained by Kamal Farai.</p>
-      <div class="footer-links">
-        <a href="contact.html">Contact</a>
-        <a href="portfolio.html">Feature map</a>
-      </div>
+      <p>© <span id="year"></span> Tasmagic · Built and maintained by Kamal Farai.</p>
+      <p class="footer-note">Free community build available now. Premium release coming soon.</p>
     </footer>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="assets/js/download-tracker.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
