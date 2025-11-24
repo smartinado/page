@@ -6,7 +6,7 @@
     <title>Tasmagic | Flutter control room for Tasmota</title>
     <meta
       name="description"
-      content="Tasmagic is the user-friendly Flutter companion for Tasmota devices, built by Kamal Farai for installers, makers, and MSPs."
+      content="Tasmagic is the comprehensive Flutter companion for Tasmota devices with 100% feature parity. 25+ screens, 27 sensor types, 10 output widgets, dual HTTP/MQTT protocol, Berry automation, and 60+ device templates. Built by Kamal Farai for installers, makers, and MSPs."
     />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
@@ -28,7 +28,7 @@
         <h1>I built Tasmagic so the Tasmota community can onboard devices without friction.</h1>
         <p>
           Tasmota is a legendary open-source firmware with a huge community. Tasmagic is my take on a commercial-grade companion app: a fully
-          offline Flutter experience that unifies discovery, provisioning, dashboards, Berry automation, and analytics. The downloadable build on
+          offline Flutter experience that unifies discovery, provisioning, dashboards, Berry automation, and analytics. With <strong>25+ screens, 18+ widgets, 27 sensor types, 10 output types, and 60+ device templates</strong> across ~25,000 lines of production code, Tasmagic delivers 100% Tasmota feature parity. The downloadable build on
           this site is <strong>free forever</strong>—it is how I learn what the community needs while the Premium tier is polished for release soon.
         </p>
         <div class="cta-row">
@@ -46,10 +46,14 @@
           <ul class="feature-list">
             <li>Dual-mode device discovery (quick scan + full subnet)</li>
             <li>Guided Wi-Fi onboarding with credential vault</li>
-            <li>Instant dashboards for relays, lights, sensors, and energy devices</li>
-            <li>Visual Berry automation editor with round-trip parsing</li>
-            <li>Sensor history charts with CSV export</li>
+            <li>Instant dashboards with 10 specialized output widgets and 27 sensor types</li>
+            <li>Visual Berry automation editor with 16 programmable timers</li>
+            <li>Dual HTTP/MQTT protocol with auto-fallback and TLS/SSL support</li>
+            <li>4 sensor visualization modes (value, gauge, chart, compact)</li>
+            <li>Firmware-level persistence for auto-off timers</li>
             <li>Template catalog covering 60+ popular devices</li>
+            <li>Complete GPIO configuration for all Tasmota pin types</li>
+            <li>Localization in 11 languages with full translation</li>
           </ul>
         </article>
         <article>
@@ -90,10 +94,41 @@
         </div>
       </section>
 
+      <section class="section">
+        <h2>Built with modern Flutter stack</h2>
+        <div class="grid two-column">
+          <div>
+            <h3>Key Technologies</h3>
+            <ul class="feature-list">
+              <li><strong>http</strong> - REST API communication</li>
+              <li><strong>mqtt5_client</strong> - Real-time messaging with TLS</li>
+              <li><strong>multicast_dns</strong> - Device discovery</li>
+              <li><strong>fl_chart</strong> - Sensor graphs & visualization</li>
+              <li><strong>provider</strong> - State management</li>
+              <li><strong>json_serializable</strong> - Model serialization</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Project Scale</h3>
+            <ul class="feature-list">
+              <li>80+ Dart files</li>
+              <li>~25,000 lines of production code</li>
+              <li>25+ UI screens</li>
+              <li>18+ reusable widgets</li>
+              <li>10+ core services</li>
+              <li>8 data models</li>
+              <li>11 languages fully translated</li>
+              <li>Zero build errors</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="section highlight">
         <div>
           <h2>Core principles</h2>
           <ul class="pill-list">
+            <li>100% Tasmota feature parity</li>
             <li>Offline-first & privacy respectful</li>
             <li>Readable automations</li>
             <li>Signed builds, no cloud accounts</li>
